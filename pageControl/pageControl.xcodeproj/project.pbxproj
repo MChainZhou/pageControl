@@ -15,6 +15,8 @@
 		186806791E2E0307008AD0AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 186806771E2E0307008AD0AD /* LaunchScreen.storyboard */; };
 		186806841E2E0308008AD0AD /* pageControlTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 186806831E2E0308008AD0AD /* pageControlTests.m */; };
 		1868068F1E2E0308008AD0AD /* pageControlUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1868068E1E2E0308008AD0AD /* pageControlUITests.m */; };
+		186806A11E2E0382008AD0AD /* JLPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 1868069E1E2E0382008AD0AD /* JLPageControl.m */; };
+		186806A21E2E0382008AD0AD /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 186806A01E2E0382008AD0AD /* UIView+Extension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		1868068A1E2E0308008AD0AD /* pageControlUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pageControlUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1868068E1E2E0308008AD0AD /* pageControlUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = pageControlUITests.m; sourceTree = "<group>"; };
 		186806901E2E0308008AD0AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1868069D1E2E0382008AD0AD /* JLPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLPageControl.h; sourceTree = "<group>"; };
+		1868069E1E2E0382008AD0AD /* JLPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLPageControl.m; sourceTree = "<group>"; };
+		1868069F1E2E0382008AD0AD /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		186806A01E2E0382008AD0AD /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,7 @@
 		186806681E2E0307008AD0AD /* pageControl */ = {
 			isa = PBXGroup;
 			children = (
+				1868069C1E2E0382008AD0AD /* JLPageControl */,
 				1868066C1E2E0307008AD0AD /* AppDelegate.h */,
 				1868066D1E2E0307008AD0AD /* AppDelegate.m */,
 				1868066F1E2E0307008AD0AD /* ViewController.h */,
@@ -138,6 +145,17 @@
 				186806901E2E0308008AD0AD /* Info.plist */,
 			);
 			path = pageControlUITests;
+			sourceTree = "<group>";
+		};
+		1868069C1E2E0382008AD0AD /* JLPageControl */ = {
+			isa = PBXGroup;
+			children = (
+				1868069D1E2E0382008AD0AD /* JLPageControl.h */,
+				1868069E1E2E0382008AD0AD /* JLPageControl.m */,
+				1868069F1E2E0382008AD0AD /* UIView+Extension.h */,
+				186806A01E2E0382008AD0AD /* UIView+Extension.m */,
+			);
+			path = JLPageControl;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,8 +291,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				186806A21E2E0382008AD0AD /* UIView+Extension.m in Sources */,
 				186806711E2E0307008AD0AD /* ViewController.m in Sources */,
 				1868066E1E2E0307008AD0AD /* AppDelegate.m in Sources */,
+				186806A11E2E0382008AD0AD /* JLPageControl.m in Sources */,
 				1868066B1E2E0307008AD0AD /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
